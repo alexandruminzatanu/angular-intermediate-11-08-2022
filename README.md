@@ -1,1 +1,1 @@
-# angular-intermediate-11-08-2022
+# angular-intermediate-11-08-2022 (Alex & Gabi)
