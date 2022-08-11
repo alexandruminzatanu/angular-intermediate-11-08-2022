@@ -7,9 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { ChuckDetailsModule } from './chuck-details/chuck-details.module';
+import { SuffixPipe } from './suffix.pipe';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SuffixPipe
   ],
   imports: [
     BrowserModule,
@@ -17,7 +20,8 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    ChuckDetailsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

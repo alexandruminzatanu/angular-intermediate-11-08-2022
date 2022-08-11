@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chuck-app';
+
+  jokeText = 'It was actually Chuck Norris who gave Halle Berry the vanilla fever';
+
+  likeClicked(){
+    this.title = 'JOKES';
+  }
 }

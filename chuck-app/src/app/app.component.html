@@ -11,3 +11,8 @@
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>
+
+
+<app-chuck-card [joke]="jokeText" (likeClicked)="likeClicked()"></app-chuck-card>
+
+{{ title | suffix:' joke':4 }}
