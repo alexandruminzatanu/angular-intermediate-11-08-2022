@@ -15,4 +15,6 @@
 
 <app-chuck-card [joke]="jokeText" (likeClicked)="likeClicked()"></app-chuck-card>
 
-{{ title | suffix:' joke':4 }}
+<p *appDuplicate="duplicateTitle">
+  {{ title | suffix:' joke':4 }}
+</p>

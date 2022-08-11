@@ -9,10 +9,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { ChuckDetailsModule } from './chuck-details/chuck-details.module';
 import { SuffixPipe } from './suffix.pipe';
+import { DuplicateDirective } from './duplicate.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    SuffixPipe
+    SuffixPipe,
+    DuplicateDirective
   ],
   imports: [
     BrowserModule,

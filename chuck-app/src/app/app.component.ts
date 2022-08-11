@@ -10,7 +10,10 @@ export class AppComponent {
 
   jokeText = 'It was actually Chuck Norris who gave Halle Berry the vanilla fever';
 
+  duplicateTitle: boolean = false;
+
   likeClicked(){
+    this.duplicateTitle = true;
     this.title = 'JOKES';
   }
 }
