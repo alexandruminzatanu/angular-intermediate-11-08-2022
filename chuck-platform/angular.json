@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "chuck-jokes": "apps/chuck-jokes",
+    "chuck-jokes-e2e": "apps/chuck-jokes-e2e",
+    "chuck-movies": "apps/chuck-movies",
+    "chuck-movies-e2e": "apps/chuck-movies-e2e",
+    "ui-components": "libs/ui-components"
+  }
+}
