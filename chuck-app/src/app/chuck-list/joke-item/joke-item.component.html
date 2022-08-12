@@ -1,4 +1,16 @@
-<p>{{ currentCategory }}</p>
 
 
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{joke?.id}}</mat-card-title>
+    <mat-card-subtitle>{{joke?.created_at}}</mat-card-subtitle>
+    <img mat-card-sm-image src="https://images02.military.com/sites/default/files/styles/full/public/media/veteran-jobs/content-images/2016/03/chucknorris.jpg" >
+  </mat-card-title-group>
+  <mat-card-content>
+    {{joke?.value}}
+  </mat-card-content>
+</mat-card>
+
+
+<button (click)="refreshJoke()"> Refresh Joke</button>
 <button (click)="goHome()"> GO HOME</button>

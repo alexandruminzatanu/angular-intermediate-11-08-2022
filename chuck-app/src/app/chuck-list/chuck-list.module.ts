@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ChuckListRoutingModule } from './chuck-list-routing.module';
 import { JokeListComponent } from './joke-list/joke-list.component';
 import { JokeItemComponent } from './joke-item/joke-item.component';
-
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,9 @@ import { JokeItemComponent } from './joke-item/joke-item.component';
   ],
   imports: [
     CommonModule,
-    ChuckListRoutingModule
+    ChuckListRoutingModule,
+    MatCardModule
+
   ]
 })
 export class ChuckListModule { }
