@@ -1,0 +1,7 @@
+<h1> Categories </h1>
+
+<div *ngFor="let category of jokesCategories">
+
+<a [routerLink]="['/chuck-list/item']" [queryParams]="{ category }"> {{category}}</a>
+
+</div>
