@@ -43,6 +43,9 @@
     <div *ngIf="!formGroup.controls['author'].valid && formGroup.controls['author'].touched">Author is required!</div>
     <div *ngIf="formGroup.controls['author'].errors && formGroup.controls['author'].errors['badAuthor']">Author must not be Bruce Lee! </div>
 
+    <app-star-rating formControlName="score" [count]="10"></app-star-rating>
+    <div *ngIf="formGroup.controls['score'].errors && formGroup.controls['score'].errors['invalidScore']">Score cannot be less than 10! </div>
+
     <button type="submit">Register</button>
     <button type="button" (click)="resetForm()">Reset</button>
   </form>

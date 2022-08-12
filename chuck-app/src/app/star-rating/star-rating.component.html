@@ -1,0 +1,8 @@
+<ng-container *ngFor="let star of stars">
+    <span (click)="setScore(star)">
+    <ng-container *ngIf="star <= score; else emptyStar">
+        &#9733;
+    </ng-container>
+    <ng-template #emptyStar> &#9734;</ng-template>
+    </span>
+</ng-container>

@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { JokeCreateComponent } from './joke-create/joke-create.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StarRatingComponent } from './star-rating/star-rating.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DuplicateDirective,
     HomeComponent,
     LoginComponent,
-    JokeCreateComponent
+    JokeCreateComponent,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,
