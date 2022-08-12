@@ -12,13 +12,16 @@ import { SuffixPipe } from './suffix.pipe';
 import { DuplicateDirective } from './duplicate.directive';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { JokeCreateComponent } from './joke-create/joke-create.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     SuffixPipe,
     DuplicateDirective,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    JokeCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,9 @@ import { LoginComponent } from './login/login.component';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    ChuckDetailsModule
+    ChuckDetailsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

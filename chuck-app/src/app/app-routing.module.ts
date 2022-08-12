@@ -1,3 +1,4 @@
+import { JokeCreateComponent } from './joke-create/joke-create.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeProtectionGuard } from './home-protection.guard';
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'intra',
     component: LoginComponent
+  },
+  {
+    path: 'create',
+    component: JokeCreateComponent
   },
   {
     path: 'chuck-list',
